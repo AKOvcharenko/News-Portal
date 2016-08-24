@@ -1,0 +1,15 @@
+.navbar img{
+    height: 35px;
+}
+
+.navbar-brand{
+    height: auto;
+}
+
+.top-news img{
+    width: 100%;
+}
+
+.most-popular-header{
+    margin-top: 0;
+}
