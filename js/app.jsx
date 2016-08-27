@@ -1,9 +1,7 @@
-import Header from './component_header/header.jsx';
+import Portal from './component_portal/Portal.jsx';
 import {render} from 'react-dom';
 
-console.log(Header);
-
-render(<Header/>, document.getElementsByClassName('header')[0]);
+render(<Portal/>, document.getElementById('portal'));
 
 
 

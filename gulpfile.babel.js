@@ -6,19 +6,18 @@ import babelify from 'babelify';
 import source from 'vinyl-source-stream';
 
 gulp.task('buildJS', () => {
-    let bundler = watchify(browserify({entries: './js/app.jsx', extensions: ['.jsx'], debug: true}));
+    const bundler = watchify(browserify({entries: './js/app.jsx', extensions: ['.jsx'], debug: true}));
 
-    function makeABild(file){
+    const makeABild = () => {
             bundler
                 .transform('babelify', {presets: ['es2015', 'react']})
                 .bundle()
                 .on('error', err => {
                     console.error(err);
-                    this.emit('end');
                 })
                 .pipe(source('app.js'))
                 .pipe(gulp.dest('./'));
-    }
+    };
 
     makeABild();
     bundler.on('update', makeABild);
