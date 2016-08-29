@@ -16,7 +16,7 @@ class Navigation extends Component{
     }
 
     render(){
-        var leagues = this.getUniqueLeagues();
+        const leagues = this.getUniqueLeagues();
         return <div className="league-navigation list-group col-sm-3 col-md-2">
                     {leagues.map(this.eachNavigationLink)}
                </div>
