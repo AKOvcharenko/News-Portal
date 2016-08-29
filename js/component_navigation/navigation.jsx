@@ -8,21 +8,18 @@ class Navigation extends Component{
         var feed = this.props.feedState;
         var set = new Set();
         feed.forEach(el => set.add(el.league));
-        return set;
+        return Array.from(set);
+    }
+
+    eachNavigationLink(text, index){
+        return <a href={"/" + text} className={"list-group-item " + text} key={index}>{text}</a>
     }
 
     render(){
         var leagues = this.getUniqueLeagues();
-        debugger;
         return <div className="league-navigation list-group col-sm-3 col-md-2">
-
-                    {leagues.map(this.eachItem)}
-                    <a href="#" className="list-group-item">first league</a>
-                    <a href="#" className="list-group-item">second league</a>
-                    <a href="#" className="list-group-item">third league</a>
-                    <a href="#" className="list-group-item">fourth league</a>
-                    <a href="#" className="list-group-item">fifth league</a>
-                </div>
+                    {leagues.map(this.eachNavigationLink)}
+               </div>
     }
 }
 
