@@ -6,9 +6,9 @@ const mapStateToProps = state => {return {feedState: state.feedState}};
 class NewsList extends Component{
     getArticles(){
         var  feed = this.props.feedState.slice();
-        const compateElem = this.props.compare;
+        const compateElem = this.props.compateElem;
         feed.sort((first, second) => {return first[compateElem] > second[compateElem] ? -1 : 1});
-        return feed.slice(0, 10);
+        return feed.slice(0, 5);
     }
 
     forEachLink(article, index){

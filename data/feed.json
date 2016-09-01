@@ -3,120 +3,135 @@
     "id": 1,
     "league": "Premier league",
     "header": "Ragnar Sigurdsson: Fulham sign Iceland international defender from FC Krasnodar",
-    "imageUrl": "./img/1.jpg",
+    "imageUrl": "1.jpg",
     "like": 22,
-    "comments": 1
+    "comments": 1,
+    "time": 15
   },
   {
     "id": 2,
     "league": "Bundesliga",
     "header": "Robert Lewandowski’s hat-trick helps Bayern Munich thrash Werder Bremen",
-    "imageUrl": "./img/2.jpg",
+    "imageUrl": "2.jpg",
     "like": 21,
-    "comments": 1
+    "comments": 1,
+    "time": 14
   },
   {
     "id": 3,
     "league": "Primera",
     "header": "Lucas Perez Martinez: Everton eye £15m Deportivo striker",
-    "imageUrl": "./img/90885947.jpg",
+    "imageUrl": "3.jpg",
     "like": 20,
-    "comments": 2
+    "comments": 2,
+    "time": 13
   },
   {
     "id": 4,
     "league": "Serie A",
     "header": "Fiorentina push Penarol for Nandez",
-    "imageUrl": "./img/4.jpg",
+    "imageUrl": "4.jpg",
     "like": 14,
-    "comments": 0
+    "comments": 0,
+    "time": 12
   },
   {
     "id": 5,
     "league": "MLS",
     "header": "Sounders' Clint Dempsey has irregular heartbeat, out for World Cup qualifiers",
-    "imageUrl": "./img/5.jpg",
+    "imageUrl": "5.jpg",
     "like": 0,
-    "comments": 0
+    "comments": 0,
+    "time": 11
   },
   {
     "id": 6,
     "league": "Premier league",
     "header": "Ragnar Sigurdsson: Fulham sign Iceland international defender from FC Krasnodar",
-    "imageUrl": "./img/1.jpg",
+    "imageUrl": "1.jpg",
     "like": 13,
-    "comments": 1
+    "comments": 1,
+    "time": 10
   },
   {
     "id": 7,
     "league": "Bundesliga",
     "header": "Robert Lewandowski’s hat-trick helps Bayern Munich thrash Werder Bremen",
-    "imageUrl": "./img/2.jpg",
+    "imageUrl": "2.jpg",
     "like": 154,
-    "comments": 1
+    "comments": 1,
+    "time": 9
   },
   {
     "id": 8,
     "league": "Primera",
     "header": "Lucas Perez Martinez: Everton eye £15m Deportivo striker",
-    "imageUrl": "./img/90885947.jpg",
+    "imageUrl": "3.jpg",
     "like": 45,
-    "comments": 2
+    "comments": 2,
+    "time": 8
   },
   {
     "id": 9,
     "league": "Serie A",
     "header": "Fiorentina push Penarol for Nandez",
-    "imageUrl": "./img/4.jpg",
+    "imageUrl": "4.jpg",
     "like": 7,
-    "comments": 0
+    "comments": 0,
+    "time": 7
   },
   {
     "id": 10,
     "league": "MLS",
     "header": "Sounders' Clint Dempsey has irregular heartbeat, out for World Cup qualifiers",
-    "imageUrl": "./img/5.jpg",
+    "imageUrl": "5.jpg",
     "like": 4,
-    "comments": 0
+    "comments": 0,
+    "time": 6
   },
   {
     "id": 11,
     "league": "Premier league",
     "header": "Ragnar Sigurdsson: Fulham sign Iceland international defender from FC Krasnodar",
-    "imageUrl": "./img/1.jpg",
+    "imageUrl": "1.jpg",
     "like": 1,
-    "comments": 1
+    "comments": 1,
+    "time": 5
   },
   {
     "id": 12,
     "league": "Bundesliga",
     "header": "Robert Lewandowski’s hat-trick helps Bayern Munich thrash Werder Bremen",
-    "imageUrl": "./img/2.jpg",
+    "imageUrl": "2.jpg",
     "like": 7,
-    "comments": 1
+    "comments": 1,
+    "time": 4
   },
   {
     "id": 13,
     "league": "Primera",
     "header": "Lucas Perez Martinez: Everton eye £15m Deportivo striker",
-    "imageUrl": "./img/90885947.jpg",
+    "imageUrl": "3.jpg",
     "like": 6,
-    "comments": 2
+    "comments": 2,
+    "time": 3
   },
   {
     "id": 14,
     "league": "Serie A",
     "header": "Fiorentina push Penarol for Nandez",
-    "imageUrl": "./img/4.jpg",
+    "imageUrl": "4.jpg",
     "like": 13,
-    "comments": 0
+    "comments": 0,
+    "time": 2
   },
   {
     "id": 15,
     "league": "MLS",
     "header": "Sounders' Clint Dempsey has irregular heartbeat, out for World Cup qualifiers",
-    "imageUrl": "./img/5.jpg",
+    "imageUrl": "5.jpg",
     "like": 45,
-    "comments": 0
+    "comments": 0,
+    "time": 1
   }
 ]
