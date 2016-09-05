@@ -8,8 +8,27 @@
 
 .top-news img{
     width: 100%;
+    max-height: 357px;
 }
 
 .most-popular-header{
     margin-top: 0;
 }
+
+.article-header{
+    margin: 0;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.article-header.active{
+    background-color: #000;
+}
+
+.article-header.active a{
+    color: #fff;
+}
+
+
+

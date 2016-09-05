@@ -9,7 +9,7 @@ gulp.task('buildJS', () => {
     const bundler = watchify(browserify({entries: './js/app.jsx', extensions: ['.jsx'], debug: true}));
 
     const makeABild = () => {
-            console.log('recompile')
+            console.log('recompiling')
             bundler
                 .transform('babelify', {presets: ['es2015', 'react']})
                 .bundle()
@@ -35,3 +35,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', ['buildJS', 'buildCSS' ,'watch']);
+

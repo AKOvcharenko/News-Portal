@@ -5,7 +5,7 @@ import store from './../store/store.js';
 import Header from './../component_header/Header.jsx';
 import Navigation from './../component_navigation/Navigation.jsx';
 import NewsList from './../component_newsList/NewsList.jsx';
-import ContentHP from './../component_contentHP/ContentHP.jsx';
+import ContentHP from '../component_contentHP/ContentHP.jsx';
 
 
 class Portal extends Component {
