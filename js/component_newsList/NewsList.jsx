@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Like from './../component_like/Like.jsx';
 import {connect} from 'react-redux';
 
 const mapStateToProps = state => {return {feedState: state.feedState}};
@@ -11,18 +12,21 @@ class NewsList extends Component{
         return feed.slice(0, 5);
     }
 
-    forEachLink(article, index){
+    forEachLi(article, index){
         const href = `/${article.league}/${article.id}`;
-        return <a href={href} className="list-group-item" key={index}>{article.header}</a>
+        return  <li className="list-group-item" key={index}>
+                    <a href={href} >{article.header}</a>
+                    <Like readOnlny="false" like={article.like} article={article}/>
+                </li>
     }
 
     render(){
         const articles = this.getArticles();
         return <div className={this.props.listType}>
             <h2 className={this.props.listType + "-header text-center"}>{this.props.header}</h2>
-            <div className="list-group">
-                {articles.map(this.forEachLink)}
-            </div>
+            <ul className="list-group">
+                {articles.map(this.forEachLi)}
+            </ul>
         </div>
     }
 }

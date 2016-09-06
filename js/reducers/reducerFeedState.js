@@ -1,18 +1,25 @@
 import initialFeed from './../../data/feed.json';
 
 const changeFeedState = {
-    increaseLikes(state, item){},
-    decreaseLikes(state, item){},
+    changeLikeState(state, item){
+        var newState = state.slice().map(article => {
+            if(item === article){
+                article.liked ? article.like -= 1 : article.like += 1;
+                article.liked = !article.liked;
+            }
+            return article;
+        });
+
+        return newState;
+    },
     increaseComments(state, item){},
     decreaseComments(state, item){}
 };
 
 const feedState = (state = initialFeed, action) => {
     switch (action.type) {
-        case "LIKE":
-            return changeFeedState.increaseLikes(state, action.item);
-        case "UNLIKE":
-            return changeFeedState.decreaseLikes(state, action.item);
+        case "CHANGE_LIKES":
+            return changeFeedState.changeLikeState(state, action.item);
         case "ADD_COMMENT":
             return changeFeedState.increaseComments(state, action.item);
         case "REMOVE_COMMENT":

@@ -38,7 +38,11 @@ class ContentHP extends Component {
     forEachLink(article, index){
         const href = `/${article.league}/${article.id}`;
         const activeArticle = this.getActiveArticle();
-        return <p className={"article-header " + (activeArticle === article ? "active" : null)} key={index}><a href={href} onMouseLeave={this.mouseLeave.bind(article)} onMouseEnter={this.mouseEnter.bind(article)}>{article.header}</a></p>
+        return <p className={"article-header " + (activeArticle === article ? "active" : "")} key={index}
+                  onMouseLeave={this.mouseLeave.bind(article)}
+                  onMouseEnter={this.mouseEnter.bind(article)}>
+                    <a href={href}>{article.header}</a>
+                </p>
     }
 
     render(){

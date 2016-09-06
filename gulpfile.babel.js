@@ -31,7 +31,7 @@ gulp.task('buildCSS', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('./css/parts/!*.css', ['buildCSS'])
+    gulp.watch('./css/parts/*.css', ['buildCSS'])
 });
 
 gulp.task('default', ['buildJS', 'buildCSS' ,'watch']);

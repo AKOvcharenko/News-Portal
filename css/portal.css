@@ -83,5 +83,22 @@
     color: #fff;
 }
 
+.like{
+    font-size: 17px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #bbb;
+}
+
+.like.liked{
+    color: #000;
+}
+
+.like .likes-number{
+    color: #000;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
 
 
