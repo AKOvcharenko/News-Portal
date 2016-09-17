@@ -1,0 +1,121 @@
+[
+  {
+    "imgSrc": "s_1.png",
+    "team": "Las Palmas",
+    "games": "2",
+    "points": "6"
+  },
+  {
+    "imgSrc": "s_2.png",
+    "team": "Barcelona",
+    "games": "2",
+    "points": "6"
+  },
+  {
+    "imgSrc": "s_3.png",
+    "team": "Real Madrid",
+    "games": "2",
+    "points": "6"
+  },
+  {
+    "imgSrc": "s_4.png",
+    "team": "Sevilla",
+    "games": "2",
+    "points": "4"
+  },
+  {
+    "imgSrc": "s_5.png",
+    "team": "Deportivo La Coruña",
+    "games": "2",
+    "points": "4"
+  },
+  {
+    "imgSrc": "s_6.png",
+    "team": "Sporting Gijón",
+    "games": "2",
+    "points": "4"
+  },
+  {
+    "imgSrc": "s_7.png",
+    "team": "Leganés",
+    "games": "2",
+    "points": "4"
+  },
+  {
+    "imgSrc": "s_8.png",
+    "team": "Eibar",
+    "games": "2",
+    "points": "3"
+  },
+  {
+    "imgSrc": "s_9.png",
+    "team": "Real Sociedad",
+    "games": "2",
+    "points": "3"
+  },
+  {
+    "imgSrc": "s_10.png",
+    "team": "Malaga",
+    "games": "2",
+    "points": "2"
+  },
+  {
+    "imgSrc": "s_11.png",
+    "team": "Atlético de Madrid",
+    "games": "2",
+    "points": "2"
+  },
+  {
+    "imgSrc": "s_12.png",
+    "team": "Alavés",
+    "games": "2",
+    "points": "2"
+  },
+  {
+    "imgSrc": "s_13.png",
+    "team": "Villarreal",
+    "games": "2",
+    "points": "2"
+  },
+  {
+    "imgSrc": "s_14.png",
+    "team": "Espanyol",
+    "games": "2",
+    "points": "1"
+  },
+  {
+    "imgSrc": "s_15.png",
+    "team": "Osasuna",
+    "games": "2",
+    "points": "1"
+  },
+  {
+    "imgSrc": "s_16.png",
+    "team": "Granada",
+    "games": "2",
+    "points": "1"
+  },
+  {
+    "imgSrc": "s_17.png",
+    "team": "Real Betis",
+    "games": "2",
+    "points": "1"
+  },
+  {
+    "imgSrc": "s_18.png",
+    "team": "Athletic Club de Bilbao",
+    "games": "2",
+    "points": "0"
+  },
+  {
+    "imgSrc": "s_19.png",
+    "team": "Celta Vigo",
+    "games": "2",
+    "points": "0"
+  },
+  {
+    "imgSrc": "s_20.png",
+    "team": "Valencia",
+    "games": "2",
+    "points": "0"
+  }]
