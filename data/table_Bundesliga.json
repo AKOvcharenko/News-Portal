@@ -1,0 +1,109 @@
+[
+    {
+      "imgSrc": "g_2.png",
+      "team": "Bayern",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "g_1.png",
+      "team": "FC Köln",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "g_3.jpg",
+      "team": "VfL Wolfsburg",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "g_4.jpg",
+      "team": "Borussia Dortmund",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "g_5.png",
+      "team": "Borussia Mönchengladbach",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "g_6.png",
+      "team": "Hertha BSC",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "g_7.jpg",
+      "team": "Eintracht Frankfurt",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "g_8.png",
+      "team": "Hoffenheim",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "g_9.jpg",
+      "team": "RB Leipzig",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "g_10.jpg",
+      "team": "Hamburger SV",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "g_11.png",
+      "team": "Ingolstadt 04",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "g_12.jpg",
+      "team": "Bayer",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "g_13.jpg",
+      "team": "Freiburg",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "g_14.png",
+      "team": "Mainz",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "g_15.jpg",
+      "team": "Schalke",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "g_16.jpg",
+      "team": "Augsburg",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "g_17.png",
+      "team": "Darmstadt ",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "g_18.png",
+      "team": "Werder",
+      "games": "1",
+      "points": "0"
+    }]

@@ -6,8 +6,8 @@ import fetchData from './../modules/fetchData.js';
 
 import Header from './../component_header/Header.jsx';
 import Navigation from '../component_navigation/Navigation.jsx';
-import NewsList from './../component_newsList/NewsList.jsx';
-import ContentHP from '../component_contentHP/ContentHP.jsx';
+import NewsList from '../component_news_list/NewsList.jsx';
+import ContentHP from '../component_content_hp/ContentHP.jsx';
 import Loader from '../component_loader/Loader.jsx';
 
 

@@ -2,22 +2,15 @@ import React, {Component} from 'react';
 
 class Loader extends Component {  
     render(){
-        return <div className="windows8">
-                    <div className="wBall" id="wBall_1">
-                        <div className="wInnerBall"></div>
-                    </div>
-                    <div className="wBall" id="wBall_2">
-                        <div className="wInnerBall"></div>
-                    </div>
-                    <div className="wBall" id="wBall_3">
-                        <div className="wInnerBall"></div>
-                    </div>
-                    <div className="wBall" id="wBall_4">
-                        <div className="wInnerBall"></div>
-                    </div>
-                    <div className="wBall" id="wBall_5">
-                        <div className="wInnerBall"></div>
-                    </div>
+        return <div id="floatingCirclesG">
+                    <div className="f_circleG" id="frotateG_01"></div>
+                    <div className="f_circleG" id="frotateG_02"></div>
+                    <div className="f_circleG" id="frotateG_03"></div>
+                    <div className="f_circleG" id="frotateG_04"></div>
+                    <div className="f_circleG" id="frotateG_05"></div>
+                    <div className="f_circleG" id="frotateG_06"></div>
+                    <div className="f_circleG" id="frotateG_07"></div>
+                    <div className="f_circleG" id="frotateG_08"></div>
                 </div>
     }
 }

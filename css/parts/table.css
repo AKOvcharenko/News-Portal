@@ -3,6 +3,10 @@
 }
 
 .table span{
-    width:30px;
+    width:35px;
     display: inline-block;
+}
+
+.table .position{
+    width: 25px;
 }

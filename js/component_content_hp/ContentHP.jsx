@@ -3,6 +3,7 @@ import Animate from 'rc-animate';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
 import actionChangeActive from './../actions/actionChangeActive.js';
+import TablesSitcher from './../component_tables_switcher/TablesSwitcher.jsx';
 import Table from './../component_table/Table.jsx';
 
 
@@ -59,7 +60,8 @@ class ContentHP extends Component {
                         </Animate>
                         {articles.map(this.forEachLink)}
                     </article>
-                    <Table league="Premier league" hp="true"/>
+                   
+                    <Table/>
                 </div>
     }
 }
