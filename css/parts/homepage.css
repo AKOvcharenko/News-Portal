@@ -30,11 +30,20 @@
     color: #fff;
 }
 
+.info-wrapper{
+    display: inline-block;
+}
+
+.news-list .list-group-item a,
+.last-news .list-group-item a{
+    margin-right: 10px;
+}
+
 .like{
     font-size: 17px;
-    margin-left: 10px;
     cursor: pointer;
     color: #bbb;
+    margin-right: 10px;
 }
 
 .like.liked{
@@ -46,6 +55,27 @@
     font-size: 14px;
     margin-left: 5px;
 }
+
+.comment,
+.like.read-only{
+    cursor: default;
+}
+
+.comment-state{
+    color: #bbb;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.commented .comment-state{
+    color: #000;
+}
+
+.pad-r-20,
+#portal .pad-r-20{
+    padding-right: 20px;
+}
+
 
 
 

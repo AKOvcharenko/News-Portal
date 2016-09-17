@@ -1,0 +1,474 @@
+[
+  [
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/34.png",
+      "team": "Man City",
+      "games": "3",
+      "points": "9"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/42.png",
+      "team": "Chelsea",
+      "games": "3",
+      "points": "9"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/50.png",
+      "team": "Man Utd",
+      "games": "3",
+      "points": "9"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/49.png",
+      "team": "Everton",
+      "games": "3",
+      "points": "7"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/489.png",
+      "team": "Hull",
+      "games": "3",
+      "points": "6"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/35.png",
+      "team": "Middlesbrough",
+      "games": "3",
+      "points": "5"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/40.png",
+      "team": "Tottenham",
+      "games": "3",
+      "points": "5"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/25.png",
+      "team": "Arsenal",
+      "games": "3",
+      "points": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/478_logo.png",
+      "team": "Leicester",
+      "games": "3",
+      "points": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/47.png",
+      "team": "West Brom",
+      "games": "3",
+      "points": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/5.png",
+      "team": "Liverpool",
+      "games": "3",
+      "points": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/48.png",
+      "team": "West Ham",
+      "games": "3",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/432.png",
+      "team": "Burnley",
+      "games": "3",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/558.png",
+      "team": "Swansea",
+      "games": "3",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/446.png",
+      "team": "Southampton",
+      "games": "3",
+      "points": "2"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/39.png",
+      "team": "Sunderland",
+      "games": "3",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/775.png",
+      "team": "Crystal Palace",
+      "games": "3",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/248.jpg",
+      "team": "Watford",
+      "games": "3",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/940.png",
+      "team": "Bournemouth",
+      "games": "3",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/477.png",
+      "team": "Stoke",
+      "games": "3",
+      "points": "1"
+    }],
+  [
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/118.png",
+      "team": "Bayern Mun",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/134.png",
+      "team": "FC Köln",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/130.jpg",
+      "team": "VfL Wolfsburg",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/126.jpg",
+      "team": "Bor Dortmd",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/123.png",
+      "team": "B M'gladbach",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/127.png",
+      "team": "Hertha BSC",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/129.jpg",
+      "team": "Eintracht Frankfurt",
+      "games": "1",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/457.png",
+      "team": "Hoffenheim",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/1068.jpg",
+      "team": "RB Leipzig",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/120.jpg",
+      "team": "Hamburger SV",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/915.png",
+      "team": "Ingolstadt 04",
+      "games": "1",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/124.jpg",
+      "team": "Bayer Levkn",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/612.jpg",
+      "team": "Freiburg",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/133.png",
+      "team": "Mainz",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/121.jpg",
+      "team": "Schalke",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/753.jpg",
+      "team": "Augsburg",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/918.png",
+      "team": "Darmstadt ",
+      "games": "1",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/119.png",
+      "team": "Werder",
+      "games": "1",
+      "points": "0"
+    }],
+  [
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/394.png",
+      "team": "Genoa",
+      "games": "2",
+      "points": "6"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/30_logo.gif",
+      "team": "Juventus",
+      "games": "2",
+      "points": "6"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/86_logo.gif",
+      "team": "Sampdoria",
+      "games": "2",
+      "points": "6"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/27_logo.gif",
+      "team": "Roma",
+      "games": "2",
+      "points": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/395.png",
+      "team": "Napoli",
+      "games": "2",
+      "points": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/807.png",
+      "team": "Pescara",
+      "games": "2",
+      "points": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/280.png",
+      "team": "Torino",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/85.png",
+      "team": "Chievo",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/875.png",
+      "team": "Sassuolo",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/32_logo.gif",
+      "team": "Lazio",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/36_logo.gif",
+      "team": "Fiorentina",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/33_logo.gif",
+      "team": "Milan",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/92_logo.gif",
+      "team": "Udinese",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/490.png",
+      "team": "Bologna",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/87_logo.gif",
+      "team": "Palermo",
+      "games": "2",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/93_logo.gif",
+      "team": "Cagliari",
+      "games": "2",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/28_logo.gif",
+      "team": "Inter Milan",
+      "games": "2",
+      "points": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/278_logo.gif",
+      "team": "Atalanta",
+      "games": "2",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/954.jpg",
+      "team": "Crotone",
+      "games": "2",
+      "points": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/95.png",
+      "team": "Empoli",
+      "games": "2",
+      "points": "0"
+    }],
+  [
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/977.png",
+      "team": "Лас Пальмас",
+      "games": "2",
+      "score": "6"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/51.png",
+      "team": "Барселона",
+      "games": "2",
+      "score": "6"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/57.png",
+      "team": "Реал Мадрид",
+      "games": "2",
+      "score": "6"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/63.png",
+      "team": "Севилья",
+      "games": "2",
+      "score": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/55.png",
+      "team": "Депортиво",
+      "games": "2",
+      "score": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/491.png",
+      "team": "Спортинг Х",
+      "games": "2",
+      "score": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/1253.png",
+      "team": "Леганес",
+      "games": "2",
+      "score": "4"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/1040.png",
+      "team": "Эйбар",
+      "games": "2",
+      "score": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/60.png",
+      "team": "Реал Сосьедад",
+      "games": "2",
+      "score": "3"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/69.png",
+      "team": "Малага",
+      "games": "2",
+      "score": "2"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/56.png",
+      "team": "Атлетико",
+      "games": "2",
+      "score": "2"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/68.png",
+      "team": "Алавес",
+      "games": "2",
+      "score": "2"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/65.png",
+      "team": "Вильярреал",
+      "games": "2",
+      "score": "2"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/52.png",
+      "team": "Эспаньол",
+      "games": "2",
+      "score": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo_sm/0x20/59.png",
+      "team": "Осасуна",
+      "games": "2",
+      "score": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/763.png",
+      "team": "Гранада",
+      "games": "2",
+      "score": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/62.png",
+      "team": "Бетис",
+      "games": "2",
+      "score": "1"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/53.png",
+      "team": "Атлетик",
+      "games": "2",
+      "score": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/67.png",
+      "team": "Сельта",
+      "games": "2",
+      "score": "0"
+    },
+    {
+      "imgSrc": "http://s.ill.in.ua/i/football/team/logo/0x20/64.png",
+      "team": "Валенсия",
+      "games": "2",
+      "score": "0"
+    }]
+]

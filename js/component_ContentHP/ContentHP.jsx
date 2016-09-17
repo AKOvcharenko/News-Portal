@@ -3,6 +3,8 @@ import Animate from 'rc-animate';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
 import actionChangeActive from './../actions/actionChangeActive.js';
+import Table from './../component_table/Table.jsx';
+
 
 const mapStateToProps = state => {return {
     feedState: state.feedState,
@@ -14,10 +16,11 @@ class ContentHP extends Component {
     constructor(){
         super();
         this.forEachLink = this.forEachLink.bind(this);
+        this.getActiveArticle = this.getActiveArticle.bind(this);
     }
 
     getActiveArticle(){
-        return this.props.activeState[0];
+        return this.props.activeState[0] || this.getMostPopularArticles()[0];
     }
 
     getMostPopularArticles(){
@@ -56,6 +59,7 @@ class ContentHP extends Component {
                         </Animate>
                         {articles.map(this.forEachLink)}
                     </article>
+                    <Table league="Premier league" hp="true"/>
                 </div>
     }
 }

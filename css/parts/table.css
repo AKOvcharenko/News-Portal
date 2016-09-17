@@ -1,0 +1,8 @@
+.table.table-striped{
+    border: 1px solid #ddd;
+}
+
+.table span{
+    width:30px;
+    display: inline-block;
+}

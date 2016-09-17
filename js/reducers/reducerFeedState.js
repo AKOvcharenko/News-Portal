@@ -1,4 +1,3 @@
-import initialFeed from './../../data/feed.json';
 
 const changeFeedState = {
     changeLikeState(state, item){
@@ -12,12 +11,18 @@ const changeFeedState = {
 
         return newState;
     },
+    fetchedData(state, data){
+        return JSON.parse(data);
+    },
     increaseComments(state, item){},
     decreaseComments(state, item){}
 };
 
-const feedState = (state = initialFeed, action) => {
+const feedState = (state = [], action) => {
     switch (action.type) {
+        case "DATA_FETCHED": {
+            return changeFeedState.fetchedData(state, action.data);
+        }
         case "CHANGE_LIKES":
             return changeFeedState.changeLikeState(state, action.item);
         case "ADD_COMMENT":

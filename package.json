@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "server": "lite-server"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +24,7 @@
     "browserify": "^12.0.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
+    "lite-server": "^2.2.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },

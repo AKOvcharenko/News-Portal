@@ -7,7 +7,8 @@
     "like": 22,
     "comments": 1,
     "time": 15,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "like": 21,
     "comments": 1,
     "time": 14,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "like": 20,
     "comments": 2,
     "time": 13,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "like": 14,
     "comments": 0,
     "time": 12,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "like": 0,
     "comments": 0,
     "time": 11,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "like": 13,
     "comments": 1,
     "time": 10,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "like": 154,
     "comments": 1,
     "time": 9,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "like": 45,
     "comments": 2,
     "time": 8,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "like": 7,
     "comments": 0,
     "time": 7,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "like": 4,
     "comments": 0,
     "time": 6,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "like": 1,
     "comments": 1,
     "time": 5,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "like": 7,
     "comments": 1,
     "time": 4,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@
     "like": 6,
     "comments": 2,
     "time": 3,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 14,
@@ -137,7 +150,8 @@
     "like": 13,
     "comments": 0,
     "time": 2,
-    "liked": false
+    "liked": false,
+    "commented" : false
   },
   {
     "id": 15,
@@ -147,6 +161,7 @@
     "like": 45,
     "comments": 0,
     "time": 1,
-    "liked": false
+    "liked": false,
+    "commented" : false
   }
 ]

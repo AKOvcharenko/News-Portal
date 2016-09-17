@@ -17,11 +17,12 @@ class Like extends Component {
     }
 
     changLikesNumber(){
-        /*!this.props.readOnlny &&*/ store.dispatch(changeLikeState(this.props.article));
+        !this.props.readOnlny && store.dispatch(changeLikeState(this.props.article));
     }
 
     render(){
-        const likeState = 'like ' + (this.props.article.liked ?  'liked' : '');
+        var likeState = 'like ' + (this.props.article.liked ?  'liked' : '');
+        likeState = likeState + (this.props.readOnlny ?  'read-only' : '');
         return <span onClick={this.changLikesNumber} className={likeState}>
                     <span className="likes-manage"><i className="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
                     <span className="likes-number">{this.props.like}</span>

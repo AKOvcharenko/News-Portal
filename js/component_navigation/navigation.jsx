@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import actionUniqueLeague from './../actions/actionUniqueLeague.js';
+import store from './../store/store.js';
 
 const mapStateToProps = state => {return {feedState: state.feedState}};
 
 class Navigation extends Component{
+
     getUniqueLeagues(){
+        var leagues;
         var feed = this.props.feedState;
         var set = new Set();
         feed.forEach(el => set.add(el.league));
-        return Array.from(set);
+        leagues = Array.from(set);
+        store.dispatch(actionUniqueLeague(leagues));
+        return leagues;
     }
 
     eachNavigationLink(text, index){
