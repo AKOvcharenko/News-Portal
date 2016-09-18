@@ -1,0 +1,121 @@
+[
+    {
+      "imgSrc": "i_2.png",
+      "team": "Genoa",
+      "games": "2",
+      "points": "6"
+    },
+    {
+      "imgSrc": "i_3.gif",
+      "team": "Juventus",
+      "games": "2",
+      "points": "6"
+    },
+    {
+      "imgSrc": "i_4.gif",
+      "team": "Sampdoria",
+      "games": "2",
+      "points": "6"
+    },
+    {
+      "imgSrc": "i_5.gif",
+      "team": "Roma",
+      "games": "2",
+      "points": "4"
+    },
+    {
+      "imgSrc": "i_1.png",
+      "team": "Napoli",
+      "games": "2",
+      "points": "4"
+    },
+    {
+      "imgSrc": "i_6.png",
+      "team": "Pescara",
+      "games": "2",
+      "points": "4"
+    },
+    {
+      "imgSrc": "i_7.png",
+      "team": "Torino",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_8.png",
+      "team": "Chievo",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_9.png",
+      "team": "Sassuolo",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_10.gif",
+      "team": "Lazio",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_11.gif",
+      "team": "Fiorentina",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_12.gif",
+      "team": "Milan",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_13.gif",
+      "team": "Udinese",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_14.png",
+      "team": "Bologna",
+      "games": "2",
+      "points": "3"
+    },
+    {
+      "imgSrc": "i_15.gif",
+      "team": "Palermo",
+      "games": "2",
+      "points": "1"
+    },
+    {
+      "imgSrc": "i_16.gif",
+      "team": "Cagliari",
+      "games": "2",
+      "points": "1"
+    },
+    {
+      "imgSrc": "i_17.gif",
+      "team": "Inter Milan",
+      "games": "2",
+      "points": "1"
+    },
+    {
+      "imgSrc": "i_18.gif",
+      "team": "Atalanta",
+      "games": "2",
+      "points": "0"
+    },
+    {
+      "imgSrc": "i_19.jpg",
+      "team": "Crotone",
+      "games": "2",
+      "points": "0"
+    },
+    {
+      "imgSrc": "i_20.png",
+      "team": "Empoli",
+      "games": "2",
+      "points": "0"
+    }]

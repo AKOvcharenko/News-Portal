@@ -2,7 +2,10 @@ const defaultState = {activeLeague: 'Premier league'};
 
 const fetchedData = (state, league, data) => {
     var result = Object.assign({}, state);
-    if(data){result[league] = JSON.parse(data);}
+    if(data){
+        data = JSON.parse(data).sort((first, second) => parseInt(first.points, 10) > parseInt(second.points, 10) ? -1 : 1);
+        result[league] = data;
+    }
     return result;
 };
 

@@ -59,6 +59,10 @@
     height: auto;
 }
 
+.top-news{
+    margin-bottom: 25px;
+}
+
 .top-news img{
     width: 100%;
     max-height: 357px;
