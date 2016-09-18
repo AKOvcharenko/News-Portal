@@ -54,13 +54,13 @@ class ContentHP extends Component {
         var activeArticle = this.getActiveArticle();
         return <div className="main col-sm-5 col-md-7">
                     <article className="top-news">
-                        <Animate  transitionLeave={false}
+                        <Animate transitionLeave={false}
                                  transitionName="fade" >
                             <a key={activeArticle.id} href={`/${activeArticle.league}/${activeArticle.id}`}><img src={`./img/${activeArticle.imageUrl}`} alt=""/></a>
                         </Animate>
                         {articles.map(this.forEachLink)}
                     </article>
-                   
+
                     <Table/>
                 </div>
     }

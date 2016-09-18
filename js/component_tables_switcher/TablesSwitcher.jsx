@@ -18,13 +18,16 @@ class TablesSwitcher extends Component {
     }
 
     eachLeague(text, index){
-        return <button type="button" onClick={this.changeTableState.bind(this, text)} className="btn btn-default" key={index}>{text}</button>
+        var active = this.props.active;
+        return <li className={active === text ? 'active' : ''} key={index}>
+                    <a onClick={this.changeTableState.bind(this, text)}  href="javascript:void(0)">{text}</a>
+                </li>
     }
 
     render(){
-        return <div className="btn-group" role="group">
+        return <ul className="nav nav-pills nav-justified">
                     {this.props.uniqueLeagues.map(this.eachLeague)}
-                </div>
+                </ul>
     }
 }
 

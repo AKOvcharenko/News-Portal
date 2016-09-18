@@ -10,9 +10,18 @@
     margin-bottom: 25px;
 }
 
+.top-news > span{
+    display: block;
+    height: 357px;
+}
+
 .top-news img{
     width: 100%;
     max-height: 357px;
+}
+
+.top-news a{
+    text-decoration: none;
 }
 
 .most-popular-header{

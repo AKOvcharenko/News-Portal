@@ -1,7 +1,7 @@
-import Portal from './component_portal/Portal.jsx';
+import Routing from './routes/Routes.jsx';
 import {render} from 'react-dom';
 
-render(<Portal/>, document.getElementById('portal'));
+render(Routing, document.getElementById('portal'));
 
 
 

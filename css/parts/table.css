@@ -10,3 +10,11 @@
 .table .position{
     width: 25px;
 }
+
+.table-wrapper{
+    min-height: 750px;
+}
+
+.table-wrapper ul.nav{
+    margin-bottom: 10px;
+}

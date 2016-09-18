@@ -58,11 +58,12 @@ class Table extends Component {
         var tableState = this.props.tablesState[activeLeague];
 
         return <div className="table-wrapper">
-                <TablesSwitcher fetchData={this.fetchData}/>
+                <TablesSwitcher active={activeLeague} fetchData={this.fetchData}/>
                 {tableState ?
-                <Animate  transitionLeave={false}
-                          transitionName="fade" >
-                    <table key={24} className="table table-striped">
+                <Animate transitionAppear={true}
+                         transitionLeave={false}
+                         transitionName="fade" >
+                    <table key={activeLeague} className="table table-striped">
                         <thead>
                             <tr>
                                 <th className="text-center">#</th><th>{activeLeague}</th><th className="text-right">Games</th><th className="text-right">Points</th>

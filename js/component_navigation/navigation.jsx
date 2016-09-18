@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
 import actionUniqueLeague from './../actions/actionUniqueLeague.js';
 import store from './../store/store.js';
 
@@ -18,7 +19,7 @@ class Navigation extends Component{
     }
 
     eachNavigationLink(text, index){
-        return <a href={"/" + text} className={"list-group-item " + text} key={index}>{text}</a>
+        return <Link to={"/" + text} className={"list-group-item " + text} key={index}>{text}</Link>
     }
 
     render(){

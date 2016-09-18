@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 class Header extends Component {
     render (){
         return <nav className="navbar navbar-default">
                     <div className="container">
                         <div className="navbar-header">
-                            <a className="navbar-brand" href="#">
+                            <Link className="navbar-brand" to="/">
                                 <img alt="Brand" src="./img/logo.png"/>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </nav>
