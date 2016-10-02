@@ -15,6 +15,11 @@ class Navigation extends Component{
     constructor(){
         super();
         this.eachNavigationLink = this.eachNavigationLink.bind(this);
+        this.getUniqueLeagues = this.getUniqueLeagues.bind(this);
+    }
+
+    componentDidMount(){
+        store.dispatch(actionUniqueLeague(this.leagues))
     }
 
     transformToURI(text){
@@ -27,7 +32,7 @@ class Navigation extends Component{
         var set = new Set();
         feed.forEach(el => set.add(el.league));
         leagues = Array.from(set);
-        store.dispatch(actionUniqueLeague(leagues));
+        this.leagues = leagues;
         return leagues;
     }
 

@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import store from './../store/store.js';
 import actionInitFeed from './../actions/actionInitFeed.js';
 import actionChangeUrlInfo from './../actions/actionChangeUrlInfo.js';
+import actionChangeActiveArticle from './../actions/actionChangeActiveArticle.js';
 import fetchData from './../modules/fetchData.js';
 
 import Header from './../component_header/Header.jsx';
@@ -17,14 +18,19 @@ const mapStateToProps = state => {return {feedState: state.feedState}};
 class Container extends Component {
 
     componentWillMount(){
-        fetchData('/data/feed.json').then(response =>store.dispatch(actionInitFeed(response)));
+        fetchData('/data/feed.json').then(response => {
+            store.dispatch(actionInitFeed(response));
+        });
+    }
+
+    componentDidUpdate(){
+        store.dispatch(actionChangeUrlInfo(this.props.urlInfo));
+        store.dispatch(actionChangeActiveArticle());
     }
 
     render(){
         var urlInfo = this.props.urlInfo;
-        var feedState = this.props.feedState;
-        if(feedState) store.dispatch(actionChangeUrlInfo(urlInfo));
-        return feedState.length ?
+        return this.props.feedState.length ?
             (<div id="provider">
                 <Header/>
                 <div id="main" className="container">

@@ -19,26 +19,20 @@ class ArticlesCarusel extends Component {
     }
 
     getActiveArticle(){
-        /*var active = this.props.activeState[0];
-        if(active && active.leagueUrl && this.props.pageInfo.league && active.leagueUrl !== this.props.pageInfo.league){
-            return this.getMostPopularArticles()[0]; // case when user navigates to league page
-        }*/
-
         return this.props.activeState[0] || this.getMostPopularArticles()[0];
     }
 
     getMostPopularArticles(){
 
-        /*var pageInfo = this.props.pageInfo;*/
+        var urlInfo = this.props.urlInfo;
         var articles = this.props.feedState.slice();
 
-        /*articles = articles.filter(article => {
-            let articlesLeague = article.league.toLowerCase();
-            if(pageInfo.league){
-                return article.leagueUrl === pageInfo.league;
+        articles = articles.filter(article => {
+            if(urlInfo.league){
+                return article.leagueUrl === urlInfo.league;
             }
             return true;
-        });*/
+        });
 
         articles.sort((first, second)=>{return first.like > second.like ? -1 : 1});
         return articles.slice(0, 3);
