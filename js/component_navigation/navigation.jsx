@@ -8,6 +8,15 @@ const mapStateToProps = state => {return {feedState: state.feedState}};
 
 class Navigation extends Component{
 
+    constructor(){
+        super();
+        this.eachNavigationLink = this.eachNavigationLink.bind(this);
+    }
+
+    transformToURI(text){
+        return text.toLowerCase().replace(/\s/g, '_');
+    }
+
     getUniqueLeagues(){
         var leagues;
         var feed = this.props.feedState;
@@ -19,7 +28,8 @@ class Navigation extends Component{
     }
 
     eachNavigationLink(text, index){
-        return <Link to={"/" + text} className={"list-group-item " + text} key={index}>{text}</Link>
+        debugger;
+        return <Link to={`/${this.transformToURI(text)}`} className={"list-group-item " + text} key={index}>{text}</Link>
     }
 
     render(){

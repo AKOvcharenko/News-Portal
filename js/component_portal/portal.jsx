@@ -5,8 +5,11 @@ import store from './../store/store.js';
 import Container from './../component_container/Container.jsx';
 
 class Portal extends Component {
+
     render (){
-        return <Provider store={store}><Container/></Provider>
+        return <Provider store={store}>
+            <Container pageInfo={this.props.params}/>
+        </Provider>
     }
 }
 

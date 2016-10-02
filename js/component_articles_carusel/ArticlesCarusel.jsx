@@ -3,16 +3,13 @@ import Animate from 'rc-animate';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
 import actionChangeActive from './../actions/actionChangeActive.js';
-import TablesSitcher from './../component_tables_switcher/TablesSwitcher.jsx';
-import Table from './../component_table/Table.jsx';
-
 
 const mapStateToProps = state => {return {
     feedState: state.feedState,
     activeState: state.activeState
 }};
 
-class ContentHP extends Component {
+class ArticlesCarusel extends Component {
 
     constructor(){
         super();
@@ -21,11 +18,27 @@ class ContentHP extends Component {
     }
 
     getActiveArticle(){
+        var active = this.props.activeState[0];
+        if(active && active.leagueUrl && this.props.pageInfo.league && active.leagueUrl !== this.props.pageInfo.league){
+            return this.getMostPopularArticles()[0]; // case when user navigates to league page
+        }
+
         return this.props.activeState[0] || this.getMostPopularArticles()[0];
     }
 
     getMostPopularArticles(){
+
+        var pageInfo = this.props.pageInfo;
         var articles = this.props.feedState.slice();
+
+        articles = articles.filter(article => {
+            let articlesLeague = article.league.toLowerCase();
+            if(pageInfo.league){
+                return article.leagueUrl === pageInfo.league;
+            }
+            return true;
+        });
+
         articles.sort((first, second)=>{return first.like > second.like ? -1 : 1});
         return articles.slice(0, 3);
     }
@@ -45,27 +58,23 @@ class ContentHP extends Component {
         return <p className={"article-header " + (activeArticle === article ? "active" : "")} key={index}
                   onMouseLeave={this.mouseLeave.bind(article)}
                   onMouseEnter={this.mouseEnter.bind(article)}>
-                    <a href={href}>{article.header}</a>
-                </p>
+            <a href={href}>{article.header}</a>
+        </p>
     }
 
     render(){
         var articles = this.getMostPopularArticles();
         var activeArticle = this.getActiveArticle();
-        return <div className="main col-sm-5 col-md-7">
-                    <article className="top-news">
-                        <Animate transitionLeave={false}
-                                 transitionName="fade" >
-                            <a key={activeArticle.id} href={`/${activeArticle.league}/${activeArticle.id}`}><img src={`./img/${activeArticle.imageUrl}`} alt=""/></a>
-                        </Animate>
-                        {articles.map(this.forEachLink)}
-                    </article>
-
-                    <Table/>
-                </div>
+        return <article className="top-news">
+            <Animate transitionLeave={false}
+                     transitionName="fade" >
+                <a key={activeArticle.id} href={`/${activeArticle.league}/${activeArticle.id}`}><img src={`./img/${activeArticle.imageUrl}`} alt=""/></a>
+            </Animate>
+            {articles.map(this.forEachLink)}
+        </article>
     }
 }
 
-ContentHP = connect(mapStateToProps)(ContentHP);
+ArticlesCarusel = connect(mapStateToProps)(ArticlesCarusel);
 
-export default ContentHP;
+export default ArticlesCarusel;
