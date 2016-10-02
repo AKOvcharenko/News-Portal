@@ -1,0 +1,1 @@
+export default info =>{ return {type: "CHANGE_URL_INFO", info: info}};

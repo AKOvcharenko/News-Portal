@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import Animate from 'rc-animate';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
-import actionChangeActive from './../actions/actionChangeActive.js';
+import actionChangeActive from './../actions/actionChangeActiveArticle.js';
 
 const mapStateToProps = state => {return {
     feedState: state.feedState,
-    activeState: state.activeState
+    activeState: state.activeState,
+    urlInfo: state.urlInfo
 }};
 
 class ArticlesCarusel extends Component {
@@ -18,26 +19,26 @@ class ArticlesCarusel extends Component {
     }
 
     getActiveArticle(){
-        var active = this.props.activeState[0];
+        /*var active = this.props.activeState[0];
         if(active && active.leagueUrl && this.props.pageInfo.league && active.leagueUrl !== this.props.pageInfo.league){
             return this.getMostPopularArticles()[0]; // case when user navigates to league page
-        }
+        }*/
 
         return this.props.activeState[0] || this.getMostPopularArticles()[0];
     }
 
     getMostPopularArticles(){
 
-        var pageInfo = this.props.pageInfo;
+        /*var pageInfo = this.props.pageInfo;*/
         var articles = this.props.feedState.slice();
 
-        articles = articles.filter(article => {
+        /*articles = articles.filter(article => {
             let articlesLeague = article.league.toLowerCase();
             if(pageInfo.league){
                 return article.leagueUrl === pageInfo.league;
             }
             return true;
-        });
+        });*/
 
         articles.sort((first, second)=>{return first.like > second.like ? -1 : 1});
         return articles.slice(0, 3);

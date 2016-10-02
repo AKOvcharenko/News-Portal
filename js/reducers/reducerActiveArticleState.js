@@ -4,7 +4,7 @@ const changeActiveArticle = (state, article) => {
 
 const activeState = (state = [], action) => {
     switch (action.type){
-        case "CHANGE_ACTIVE":
+        case "CHANGE_ACTIVE_ARTICLE":
             return changeActiveArticle(state, action.article);
         default:
             return state;

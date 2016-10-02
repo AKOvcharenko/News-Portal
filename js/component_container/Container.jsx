@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
 import actionInitFeed from './../actions/actionInitFeed.js';
+import actionChangeUrlInfo from './../actions/actionChangeUrlInfo.js';
 import fetchData from './../modules/fetchData.js';
 
 import Header from './../component_header/Header.jsx';
@@ -20,13 +21,15 @@ class Container extends Component {
     }
 
     render(){
-        var pageInfo = this.props.pageInfo;
-        return this.props.feedState.length ?
+        var urlInfo = this.props.urlInfo;
+        var feedState = this.props.feedState;
+        if(feedState) store.dispatch(actionChangeUrlInfo(urlInfo));
+        return feedState.length ?
             (<div id="provider">
                 <Header/>
                 <div id="main" className="container">
                     <Navigation/>
-                    {pageInfo.id ? "" : <ContentLHP pageInfo={pageInfo}/>}
+                    {urlInfo.id ? "" : <ContentLHP/>}
                     <div className="news-list col-sm-4 col-md-3">
                         <NewsList compateElem="like" header="Most Popular" listType="most-popular"/>
                         <NewsList compateElem="time" header="Last News" listType="last-news"/>

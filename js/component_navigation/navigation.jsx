@@ -4,7 +4,11 @@ import {Link} from 'react-router';
 import actionUniqueLeague from './../actions/actionUniqueLeague.js';
 import store from './../store/store.js';
 
-const mapStateToProps = state => {return {feedState: state.feedState}};
+const mapStateToProps = state => {
+    return {
+        feedState: state.feedState,
+        urlInfo: state.urlInfo
+}};
 
 class Navigation extends Component{
 
@@ -28,8 +32,10 @@ class Navigation extends Component{
     }
 
     eachNavigationLink(text, index){
-        debugger;
-        return <Link to={`/${this.transformToURI(text)}`} className={"list-group-item " + text} key={index}>{text}</Link>
+        var likeLink = this.transformToURI(text);
+        var urlInfo = this.props.urlInfo;
+        var activeLeague = likeLink === urlInfo.league ? 'active' : '';
+        return <Link to={`/${likeLink}`} className={"list-group-item " + activeLeague } key={index}>{text}</Link>
     }
 
     render(){
