@@ -23,11 +23,11 @@ class Table extends Component {
     }
 
     fetchData(activeLeague){
-        var activeLeague = activeLeague || this.props.tablesState.activeLeague;
+        activeLeague = activeLeague || this.props.tablesState.activeLeague;
         if (this.props.tablesState[activeLeague]){
             store.dispatch(actionGotTableData(activeLeague));
         }else{
-            let src = `/data/table_${this.transformToURI(activeLeague)}.json`;
+            let src = `/data/table_${activeLeague}.json`;
             fetchData(src).then(response => store.dispatch(actionGotTableData(activeLeague, response)));
         }
     }

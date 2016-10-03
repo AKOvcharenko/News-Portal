@@ -4,6 +4,7 @@ import store from './../store/store.js';
 import actionInitFeed from './../actions/actionInitFeed.js';
 import actionChangeUrlInfo from './../actions/actionChangeUrlInfo.js';
 import actionChangeActiveArticle from './../actions/actionChangeActiveArticle.js';
+import actionChangeTableState from './../actions/actionChangeTableState.js';
 import fetchData from './../modules/fetchData.js';
 
 import Header from './../component_header/Header.jsx';
@@ -24,8 +25,11 @@ class Container extends Component {
     }
 
     componentDidUpdate(){
-        store.dispatch(actionChangeUrlInfo(this.props.urlInfo));
-        store.dispatch(actionChangeActiveArticle());
+        if(this.props.urlInfo){
+            store.dispatch(actionChangeUrlInfo(this.props.urlInfo));
+            store.dispatch(actionChangeActiveArticle());
+            store.dispatch(actionChangeTableState(this.props.urlInfo.league));
+        }
     }
 
     render(){

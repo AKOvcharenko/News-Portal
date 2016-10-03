@@ -1,4 +1,4 @@
-const defaultState = {activeLeague: 'Premier league'};
+const defaultState = {activeLeague: 'premier_league'};
 
 const fetchedData = (state, league, data) => {
     var result = Object.assign({}, state);

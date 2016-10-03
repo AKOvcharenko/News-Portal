@@ -27,20 +27,25 @@ class Navigation extends Component{
     }
 
     getUniqueLeagues(){
-        var leagues;
         var feed = this.props.feedState;
-        var set = new Set();
-        feed.forEach(el => set.add(el.league));
-        leagues = Array.from(set);
+        var leagues  = feed.map(league => league.league).filter((league, i, arr) => arr.indexOf(league) === i);
+
+        leagues = leagues.map(league =>{
+            let obj = {};
+            obj[league] = this.transformToURI(league);
+            return obj;
+        });
+
         this.leagues = leagues;
         return leagues;
     }
 
-    eachNavigationLink(text, index){
-        var likeLink = this.transformToURI(text);
+    eachNavigationLink(link, index){
         var urlInfo = this.props.urlInfo;
+        var leagueName = Object.keys(link)[0];
+        var likeLink = link[leagueName];
         var activeLeague = likeLink === urlInfo.league ? 'active' : '';
-        return <Link to={`/${likeLink}`} className={"list-group-item " + activeLeague } key={index}>{text}</Link>
+        return <Link to={`/${likeLink}`} className={"list-group-item " + activeLeague } key={index}>{leagueName}</Link>
     }
 
     render(){

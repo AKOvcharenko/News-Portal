@@ -17,10 +17,12 @@ class TablesSwitcher extends Component {
         this.props.fetchData(text);
     }
 
-    eachLeague(text, index){
+    eachLeague(league, index){
+        var leagueName = Object.keys(league)[0];
+        var likeLink = league[leagueName];
         var active = this.props.active;
-        return <li className={active === text ? 'active' : ''} key={index}>
-                    <a onClick={this.changeTableState.bind(this, text)}  href="javascript:void(0)">{text}</a>
+        return <li className={active === likeLink ? 'active' : ''} key={index}>
+                    <a onClick={this.changeTableState.bind(this, likeLink)}  href="javascript:void(0)">{leagueName}</a>
                 </li>
     }
 
