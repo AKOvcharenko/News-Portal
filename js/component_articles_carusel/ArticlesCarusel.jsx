@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 import Animate from 'rc-animate';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
@@ -48,12 +49,12 @@ class ArticlesCarusel extends Component {
     }
 
     forEachLink(article, index){
-        const href = `/${article.league}/${article.id}`;
+        const href = `/${article.leagueUrl}/${article.id}`;
         const activeArticle = this.getActiveArticle();
         return <p className={"article-header " + (activeArticle === article ? "active" : "")} key={index}
                   onMouseLeave={this.mouseLeave.bind(article)}
                   onMouseEnter={this.mouseEnter.bind(article)}>
-            <a href={href}>{article.header}</a>
+            <Link to={href}>{article.header}</Link>
         </p>
     }
 
@@ -63,7 +64,7 @@ class ArticlesCarusel extends Component {
         return <article className="top-news">
             <Animate transitionLeave={false}
                      transitionName="fade" >
-                <a key={activeArticle.id} href={`/${activeArticle.league}/${activeArticle.id}`}><img src={`./img/${activeArticle.imageUrl}`} alt=""/></a>
+                <Link key={activeArticle.id} to={`/${activeArticle.leagueUrl}/${activeArticle.id}`}><img src={`./img/${activeArticle.imageUrl}`} alt=""/></Link>
             </Animate>
             {articles.map(this.forEachLink)}
         </article>

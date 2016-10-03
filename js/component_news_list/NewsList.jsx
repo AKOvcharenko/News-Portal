@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
 import Like from './../component_like/Like.jsx';
 import Comment from './../component_comment/Comment.jsx';
 
@@ -23,9 +24,9 @@ class NewsList extends Component{
     }
 
     forEachLi(article, index){
-        const href = `/${article.league}/${article.id}`;
+        const href = `/${article.leagueUrl}/${article.id}`;
         return  <li className="list-group-item" key={index}>
-                    <a href={href} >{article.header}</a>
+                    <Link to={href} >{article.header}</Link>
                     <span className="info-wrapper">
                         <Like readOnlny="false" like={article.like} article={article}/>
                         <Comment article={article}/>
