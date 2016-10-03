@@ -41,7 +41,7 @@ class Container extends Component {
                     <Navigation/>
                     {urlInfo.id ? "" : <ContentLHP/>}
                     <div className="news-list col-sm-4 col-md-3">
-                        <NewsList compateElem="like" header="Most Popular" listType="most-popular"/>
+                        <NewsList compateElem="like" header={`Most Popular ${urlInfo.league ? 'in ' : ''}`} listType="most-popular"/>
                         <NewsList compateElem="time" header="Last News" listType="last-news"/>
                     </div>
                 </div>
