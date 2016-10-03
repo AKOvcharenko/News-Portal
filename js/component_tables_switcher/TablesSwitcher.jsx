@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
 import actionChangeTableState from './../actions/actionChangeTableState.js';
+
 const mapStateToProps = state => {return {uniqueLeagues: state.uniqueLeagues}};
 
 class TablesSwitcher extends Component {
@@ -15,6 +16,10 @@ class TablesSwitcher extends Component {
     changeTableState(text){
         store.dispatch(actionChangeTableState(text));
         this.props.fetchData(text);
+    }
+
+    componentDidUpdate(){
+        this.props.fetchData();
     }
 
     eachLeague(league, index){

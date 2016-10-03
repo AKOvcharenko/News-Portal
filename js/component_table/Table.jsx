@@ -7,7 +7,7 @@ import actionGotTableData from './../actions/actionGotTableData.js';
 import Loader from '../component_loader/Loader.jsx';
 import TablesSwitcher from './../component_tables_switcher/TablesSwitcher.jsx';
 
-const mapStateToProps = state => {return {tablesState: state.tablesState}};
+const mapStateToProps = state => {return {tablesState: state.tablesState, uniqueLeagues: state.uniqueLeagues}};
 
 class Table extends Component {
 
@@ -16,10 +16,6 @@ class Table extends Component {
         this.eachTeam = this.eachTeam.bind(this);
         this.eachLeague = this.eachLeague.bind(this);
         this.fetchData = this.fetchData.bind(this);
-    }
-
-    transformToURI(text){
-        return text.toLowerCase().replace(/\s/g, '_');
     }
 
     fetchData(activeLeague){
@@ -32,16 +28,12 @@ class Table extends Component {
         }
     }
     
-    componentWillMount(){
-        this.fetchData();
-    }
-
     eachTeam(team, index){
         var activeLeague = this.props.tablesState.activeLeague;
         return <tr key={index}>
                     <td className="position text-center">{index + 1}</td>
                     <td>
-                        <span className="text-center"><img src={`./img/${this.transformToURI(activeLeague)}/${team.imgSrc}`} alt=""/></span>
+                        <span className="text-center"><img src={`./img/${activeLeague}/${team.imgSrc}`} alt=""/></span>
                         {team.team}
                     </td>
                     <td className="text-right col-sm-1 pad-r-20">{team.games}</td>
@@ -53,10 +45,16 @@ class Table extends Component {
         return <button type="button" data-league={text} onClick={this.changeTableState.bind(this, text)} className="btn btn-default" key={index}>{text}</button>
     }
 
+    getActiveLeagueName(leagues, league){
+        var name = '';
+        leagues.forEach(el => {let key = Object.keys(el)[0]; if(el[key] === league){name = key}});
+        return name;
+    }
+
     render(){
         var activeLeague = this.props.tablesState.activeLeague;
         var tableState = this.props.tablesState[activeLeague];
-
+        var activeLeagueName = this.getActiveLeagueName(this.props.uniqueLeagues, activeLeague);
         return <div className="table-wrapper">
                 <TablesSwitcher active={activeLeague} fetchData={this.fetchData}/>
                 {tableState ?
@@ -66,7 +64,7 @@ class Table extends Component {
                     <table key={activeLeague} className="table table-striped">
                         <thead>
                             <tr>
-                                <th className="text-center">#</th><th>{activeLeague}</th><th className="text-right">Games</th><th className="text-right">Points</th>
+                                <th className="text-center">#</th><th>{activeLeagueName}</th><th className="text-right">Games</th><th className="text-right">Points</th>
                             </tr>
                         </thead>
                         <tbody>

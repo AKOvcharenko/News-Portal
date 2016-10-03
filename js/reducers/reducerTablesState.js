@@ -11,7 +11,7 @@ const fetchedData = (state, league, data) => {
 
 const changeActiveTable = (state, league) => {
     var result = Object.assign({}, state);
-    result.activeLeague = league;
+    result.activeLeague = league || 'premier_league';
     return result;
 };
 
