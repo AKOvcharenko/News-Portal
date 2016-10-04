@@ -11,6 +11,7 @@ import Header from './../component_header/Header.jsx';
 import Navigation from '../component_navigation/Navigation.jsx';
 import NewsList from '../component_news_list/NewsList.jsx';
 import ContentLHP from '../component_content_lhp/ContentLHP.jsx';
+import ContentAP from '../component_content_ap/ContentAP.jsx';
 import Loader from '../component_loader/Loader.jsx';
 
 
@@ -39,7 +40,7 @@ class Container extends Component {
                 <Header/>
                 <div id="main" className="container">
                     <Navigation/>
-                    {urlInfo.id ? "" : <ContentLHP/>}
+                    {urlInfo.id ? <ContentAP/> : <ContentLHP/>}
                     <div className="news-list col-sm-4 col-md-3">
                         <NewsList compateElem="like" header="Most Popular" listType="most-popular"/>
                         <NewsList compateElem="time" header="Last News" listType="last-news"/>

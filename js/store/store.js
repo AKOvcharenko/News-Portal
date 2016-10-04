@@ -4,13 +4,15 @@ import activeState from './../reducers/reducerActiveArticleState.js';
 import tablesState from './../reducers/reducerTablesState.js';
 import uniqueLeagues from './../reducers/reducerUniqueLeague.js';
 import urlInfo from './../reducers/reducerUrlInfo.js';
+import articlesState from './../reducers/reducerArticlesState.js';
 
 const reducers = combineReducers({
     feedState: feedState,
     activeState: activeState,
     tablesState: tablesState,
     uniqueLeagues: uniqueLeagues,
-    urlInfo: urlInfo
+    urlInfo: urlInfo,
+    articlesState: articlesState
 });
 
 const store = createStore(reducers);

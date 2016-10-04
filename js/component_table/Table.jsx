@@ -15,10 +15,10 @@ class Table extends Component {
         super();
         this.eachTeam = this.eachTeam.bind(this);
         this.eachLeague = this.eachLeague.bind(this);
-        this.fetchData = this.fetchData.bind(this);
+        this.requestForData = this.requestForData.bind(this);
     }
 
-    fetchData(activeLeague){
+    requestForData(activeLeague){
         activeLeague = activeLeague || this.props.tablesState.activeLeague;
         if (this.props.tablesState[activeLeague]){
             store.dispatch(actionGotTableData(activeLeague));
@@ -56,7 +56,7 @@ class Table extends Component {
         var tableState = this.props.tablesState[activeLeague];
         var activeLeagueName = this.getActiveLeagueName(this.props.uniqueLeagues, activeLeague);
         return <div className="table-wrapper">
-                <TablesSwitcher active={activeLeague} fetchData={this.fetchData}/>
+                <TablesSwitcher active={activeLeague} fetchData={this.requestForData}/>
                 {tableState ?
                 <Animate transitionAppear={true}
                          transitionLeave={false}
