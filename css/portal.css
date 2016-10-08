@@ -1,3 +1,20 @@
+.article-header{
+    font: 28px/32px 'PFDinBold', Arial, sans-serif;
+    color: #030608;
+    letter-spacing: .5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.article-image{
+    width: 100%;
+}
+
+.article-body{
+    font-size: 16px;
+    margin: 20px 0;
+}
 .fade-enter {
     opacity: 0;
     animation-duration: 0.5s;
@@ -81,18 +98,18 @@
     margin-top: 0;
 }
 
-.article-header{
+.article-name{
     margin: 0;
     line-height: 30px;
     font-size: 16px;
     padding: 0px 10px;
 }
 
-.article-header.active{
+.article-name.active{
     background-color: #000;
 }
 
-.article-header.active a{
+.article-name.active a{
     color: #fff;
 }
 

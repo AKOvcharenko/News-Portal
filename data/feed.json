@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "league": "Premier league",
     "leagueUrl": "premier_league",
     "header": "Ragnar Sigurdsson: Fulham sign Iceland international defender from FC Krasnodar",
@@ -12,7 +12,7 @@
     "commented" : false
   },
   {
-    "id": 2,
+    "id": "2",
     "league": "Bundesliga",
     "leagueUrl": "bundesliga",
     "header": "Robert Lewandowski’s hat-trick helps Bayern Munich thrash Werder Bremen",
@@ -24,7 +24,7 @@
     "commented" : false
   },
   {
-    "id": 3,
+    "id": "3",
     "league": "Primera",
     "leagueUrl": "primera",
     "header": "Lucas Perez Martinez: Everton eye £15m Deportivo striker",
@@ -36,7 +36,7 @@
     "commented" : false
   },
   {
-    "id": 4,
+    "id": "4",
     "league": "Serie A",
     "leagueUrl": "serie_a",
     "header": "Fiorentina push Penarol for Nandez",
@@ -48,7 +48,7 @@
     "commented" : false
   },
   {
-    "id": 5,
+    "id": "5",
     "league": "Ligue 1",
     "leagueUrl": "ligue_1",
     "header": "Emmanuel Adebayor: Lyon pull out of deal amid Cup of Nations concerns",
@@ -60,7 +60,7 @@
     "commented" : false
   },
   {
-    "id": 6,
+    "id": "6",
     "league": "Premier league",
     "leagueUrl": "premier_league",
     "header": "Ragnar Sigurdsson: Fulham sign Iceland international defender from FC Krasnodar",
@@ -72,7 +72,7 @@
     "commented" : false
   },
   {
-    "id": 7,
+    "id": "7",
     "league": "Bundesliga",
     "leagueUrl": "bundesliga",
     "header": "Robert Lewandowski’s hat-trick helps Bayern Munich thrash Werder Bremen",
@@ -84,7 +84,7 @@
     "commented" : false
   },
   {
-    "id": 8,
+    "id": "8",
     "league": "Primera",
     "leagueUrl": "primera",
     "header": "Lucas Perez Martinez: Everton eye £15m Deportivo striker",
@@ -96,7 +96,7 @@
     "commented" : false
   },
   {
-    "id": 9,
+    "id": "9",
     "league": "Serie A",
     "leagueUrl": "serie_a",
     "header": "Fiorentina push Penarol for Nandez",
@@ -108,7 +108,7 @@
     "commented" : false
   },
   {
-    "id": 10,
+    "id": "10",
     "league": "Ligue 1",
     "leagueUrl": "ligue_1",
     "header": "Emmanuel Adebayor: Lyon pull out of deal amid Cup of Nations concerns",
@@ -120,7 +120,7 @@
     "commented" : false
   },
   {
-    "id": 11,
+    "id": "11",
     "league": "Premier league",
     "leagueUrl": "premier_league",
     "header": "Ragnar Sigurdsson: Fulham sign Iceland international defender from FC Krasnodar",
@@ -132,7 +132,7 @@
     "commented" : false
   },
   {
-    "id": 12,
+    "id": "12",
     "league": "Bundesliga",
     "leagueUrl": "bundesliga",
     "header": "Robert Lewandowski’s hat-trick helps Bayern Munich thrash Werder Bremen",
@@ -144,7 +144,7 @@
     "commented" : false
   },
   {
-    "id": 13,
+    "id": "13",
     "league": "Primera",
     "leagueUrl": "primera",
     "header": "Lucas Perez Martinez: Everton eye £15m Deportivo striker",
@@ -156,7 +156,7 @@
     "commented" : false
   },
   {
-    "id": 14,
+    "id": "14",
     "league": "Serie A",
     "leagueUrl": "serie_a",
     "header": "Fiorentina push Penarol for Nandez",
@@ -168,7 +168,7 @@
     "commented" : false
   },
   {
-    "id": 15,
+    "id": "15",
     "league": "Ligue 1",
     "leagueUrl": "ligue_1",
     "header": "Emmanuel Adebayor: Lyon pull out of deal amid Cup of Nations concerns",

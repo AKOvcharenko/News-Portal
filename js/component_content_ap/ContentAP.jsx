@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Article from './../component_article/Article.jsx';
 //import Opinions from './../component_opinions/Opinions.jsx';
+import Loader from '../component_loader/Loader.jsx';
 import fetchData from './../modules/fetchData.js';
 import {connect} from 'react-redux';
 import store from './../store/store.js';
@@ -15,6 +16,7 @@ class ContentAP extends Component {
     }
 
     requestForData(){
+
         var articles = this.props.articles;
         if (articles.length){
             store.dispatch(actionGotArticles(articles));
@@ -26,7 +28,7 @@ class ContentAP extends Component {
 
     render(){
         return <div className="main col-sm-5 col-md-7">
-            <Article/>
+            {this.props.articles.length ? <Article/> : <Loader/>}
         </div>
     }
 }

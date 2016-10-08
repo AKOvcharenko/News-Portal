@@ -20,6 +20,7 @@ const mapStateToProps = state => {return {feedState: state.feedState}};
 class Container extends Component {
 
     componentWillMount(){
+        store.dispatch(actionChangeUrlInfo(this.props.urlInfo));
         fetchData('/data/feed.json').then(response => {
             store.dispatch(actionInitFeed(response));
         });

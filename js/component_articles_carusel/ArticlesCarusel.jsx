@@ -51,7 +51,7 @@ class ArticlesCarusel extends Component {
     forEachLink(article, index){
         const href = `/${article.leagueUrl}/${article.id}`;
         const activeArticle = this.getActiveArticle();
-        return <p className={"article-header " + (activeArticle === article ? "active" : "")} key={index}
+        return <p className={"article-name " + (activeArticle === article ? "active" : "")} key={index}
                   onMouseLeave={this.mouseLeave.bind(article)}
                   onMouseEnter={this.mouseEnter.bind(article)}>
             <Link to={href}>{article.header}</Link>

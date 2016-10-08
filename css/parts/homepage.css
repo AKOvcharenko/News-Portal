@@ -28,18 +28,18 @@
     margin-top: 0;
 }
 
-.article-header{
+.article-name{
     margin: 0;
     line-height: 30px;
     font-size: 16px;
     padding: 0px 10px;
 }
 
-.article-header.active{
+.article-name.active{
     background-color: #000;
 }
 
-.article-header.active a{
+.article-name.active a{
     color: #fff;
 }
 
