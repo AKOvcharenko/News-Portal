@@ -12,9 +12,15 @@ const changeFeedState = {
         return newState;
     },
     fetchedData(state, data){
-        return JSON.parse(data);
+        return  typeof data === 'string' ? JSON.parse(data) : data;
     },
-    increaseComments(state, item){},
+    increaseComments(state, id){
+        var result = state.slice();
+        return result.map(article => {if(article.id === id){
+            article.commented = true;
+            article.comments = article.comments + 1;
+        } return article});
+    },
     decreaseComments(state, item){}
 };
 
@@ -25,8 +31,8 @@ const feedState = (state = [], action) => {
         }
         case "CHANGE_LIKES":
             return changeFeedState.changeLikeState(state, action.item);
-        case "ADD_COMMENT":
-            return changeFeedState.increaseComments(state, action.item);
+        case "COMMENT_ADDED":
+            return changeFeedState.increaseComments(state, action.id);
         case "REMOVE_COMMENT":
             return changeFeedState.decreaseComments(state, action.item);
         default:
