@@ -15,7 +15,6 @@ class TablesSwitcher extends Component {
 
     changeTableState(text){
         store.dispatch(actionChangeTableState(text));
-        this.props.fetchData(text);
     }
 
     componentDidUpdate(){

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Animate from 'rc-animate';
 import Article from './../component_article/Article.jsx';
 import Opinions from './../component_opinions/Opinions.jsx';
 import Loader from '../component_loader/Loader.jsx';
@@ -8,7 +9,7 @@ import store from './../store/store.js';
 import actionGotArticles from './../actions/actionGotArticlesData.js';
 import actionAddComment from './../actions/actionAddComment.js';
 
-const mapStateToProps = state => {return {urlInfo: state.urlInfo, articles: state.articlesState, feedState: state.feedState}};
+const mapStateToProps = state => {return {articles: state.articlesState, feedState: state.feedState}};
 
 class ContentAP extends Component {
 
@@ -40,7 +41,8 @@ class ContentAP extends Component {
             commentsNumber : feedPart.comments,
             commented : feedPart.commented,
             comments : infoPart.comments,
-            text : infoPart.text
+            text : infoPart.text,
+            id : infoPart.id
         };
     }
 
@@ -57,15 +59,19 @@ class ContentAP extends Component {
     render(){
         var articles = this.props.articles.length;
         var article = articles && this.getArticle();
-        return <div className="main col-sm-5 col-md-7">
-            { articles ?
-                <div>
-                    <Article changeLikeState={this.changeCommentsLikesState} article ={article}/>
-                    <Opinions changeComments={this.changeCommentsLikesState} article={article}/>
-                </div> :
-                <Loader/>
-            }
-        </div>
+        return <Animate transitionAppear={true}
+                        transitionLeave={false}
+                        transitionName="fade" >
+                    <div className="main col-sm-5 col-md-7">
+                        { articles ?
+                            <div>
+                                <Article changeLikeState={this.changeCommentsLikesState} article ={article}/>
+                                <Opinions changeComments={this.changeCommentsLikesState} article={article}/>
+                            </div> :
+                            <Loader/>
+                        }
+                    </div>
+            </Animate>
     }
 }
 

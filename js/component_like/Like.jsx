@@ -5,10 +5,6 @@ import changeLikeState from './../actions/actionChangeLikeState.js';
 
 const mapStateToProps = state => {return {feedState: state.feedState}};
 
-
-
-
-
 class Like extends Component {
 
     constructor(){
@@ -21,11 +17,13 @@ class Like extends Component {
     }
 
     render(){
-        var likeState = 'like ' + (this.props.article.liked ?  'liked' : '');
+        var article = this.props.article;
+        var likeState = 'like ' + (article.liked ?  'liked ' : '');
         likeState = likeState + (this.props.readOnlny ?  'read-only' : '');
         return <span onClick={this.changLikesNumber} className={likeState}>
+                    {this.props.showCopy && <span className="likes-text">{article.liked ?  'I like it': 'Do you like it?'}</span>}
                     <span className="likes-manage"><i className="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                    <span className="likes-number">{this.props.like}</span>
+                    <span className="likes-number">{article.like}</span>
                </span>
     }
 }

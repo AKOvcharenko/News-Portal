@@ -28,7 +28,7 @@ class NewsList extends Component{
         return  <li className="list-group-item" key={index}>
                     <Link to={href} >{article.header}</Link>
                     <span className="info-wrapper">
-                        <Like readOnlny="false" like={article.like} article={article}/>
+                        <Like readOnlny={true} article={article}/>
                         <Comment article={article}/>
                     </span>
                 </li>

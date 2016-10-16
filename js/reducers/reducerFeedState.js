@@ -1,15 +1,11 @@
 
 const changeFeedState = {
-    changeLikeState(state, item){
-        var newState = state.slice().map(article => {
-            if(item === article){
-                article.liked ? article.like -= 1 : article.like += 1;
-                article.liked = !article.liked;
-            }
-            return article;
-        });
-
-        return newState;
+    changeLikeState(state, instance){
+        var result = state.slice();
+        return result.map(article => {if(article.id === instance.id){
+            article.liked ? article.like -= 1 : article.like += 1;
+            article.liked = !article.liked;
+        } return article});
     },
     fetchedData(state, data){
         return  typeof data === 'string' ? JSON.parse(data) : data;

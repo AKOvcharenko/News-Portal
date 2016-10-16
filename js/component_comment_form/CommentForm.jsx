@@ -23,7 +23,7 @@ class CommentForm extends Component {
     }
 
     render() {
-        return <div className="row">
+        return <div className="row comment-form">
                     <div className="col-md-12">
                         <div className="well">
                             <form onSubmit={this.onSubmit}>

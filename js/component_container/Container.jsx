@@ -8,6 +8,7 @@ import actionChangeTableState from './../actions/actionChangeTableState.js';
 import fetchData from './../modules/fetchData.js';
 
 import Header from './../component_header/Header.jsx';
+import Footer from './../component_footer/Footer.jsx';
 import Navigation from '../component_navigation/Navigation.jsx';
 import NewsList from '../component_news_list/NewsList.jsx';
 import ContentLHP from '../component_content_lhp/ContentLHP.jsx';
@@ -20,10 +21,13 @@ const mapStateToProps = state => {return {feedState: state.feedState}};
 class Container extends Component {
 
     componentWillMount(){
-        store.dispatch(actionChangeUrlInfo(this.props.urlInfo));
         fetchData('/data/feed.json').then(response => {
             store.dispatch(actionInitFeed(response));
         });
+    }
+    
+    componentWillUpdate(){
+        store.dispatch(actionChangeUrlInfo(this.props.urlInfo));
     }
 
     componentDidUpdate(){
@@ -41,12 +45,13 @@ class Container extends Component {
                 <Header/>
                 <div id="main" className="container">
                     <Navigation/>
-                    {urlInfo.id ? <ContentAP/> : <ContentLHP/>}
+                    {urlInfo.id ? <ContentAP urlInfo={urlInfo}/> : <ContentLHP/>}
                     <div className="news-list col-sm-4 col-md-3">
                         <NewsList compateElem="like" header="Most Popular" listType="most-popular"/>
                         <NewsList compateElem="time" header="Last News" listType="last-news"/>
                     </div>
                 </div>
+                <Footer/>
             </div>) : <Loader/>;
     }
 }
