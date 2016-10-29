@@ -1,5 +1,6 @@
 
 const fetchedData = (state, data) => {
+    debugger;
     return typeof data === 'string' ? JSON.parse(data) : data;
 };
 
