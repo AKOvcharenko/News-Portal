@@ -1,4 +1,4 @@
-Simple portal wih football news written with react + redux.
+Simple portal with football news written with react + redux.
 
 1. install node modules
 2. set up lite server: npm run server
