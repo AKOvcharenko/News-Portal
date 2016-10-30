@@ -36,7 +36,7 @@ class ArticlesCarusel extends Component {
         });
 
         articles.sort((first, second)=>{return first.like > second.like ? -1 : 1});
-        return this.state.more ? articles.slice(0, 10) : articles.slice(0, 3);
+        return articles.slice(0, 3);
     }
 
     mouseEnter(){
