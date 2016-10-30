@@ -20,7 +20,7 @@ class NewsList extends Component{
         });
 
         feed.sort((first, second) => {return first[compateElem] > second[compateElem] ? -1 : 1});
-        return feed.slice(0, 5);
+        return feed.slice(0, 7);
     }
 
     forEachLi(article, index){

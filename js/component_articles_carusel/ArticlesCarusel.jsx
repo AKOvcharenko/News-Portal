@@ -17,6 +17,7 @@ class ArticlesCarusel extends Component {
         super();
         this.forEachLink = this.forEachLink.bind(this);
         this.getActiveArticle = this.getActiveArticle.bind(this);
+        this.showMore = this.showMore.bind(this);
     }
 
     getActiveArticle(){
@@ -36,7 +37,7 @@ class ArticlesCarusel extends Component {
         });
 
         articles.sort((first, second)=>{return first.like > second.like ? -1 : 1});
-        return articles.slice(0, 3);
+        return this.state.more ? articles.slice(0, 10) : articles.slice(0, 3);
     }
 
     mouseEnter(){

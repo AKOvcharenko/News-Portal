@@ -13,7 +13,6 @@ export default (url) => {
         req.onerror = function() {
             reject(new Error("Network error"));
         };
-
         req.send();
     });
 }

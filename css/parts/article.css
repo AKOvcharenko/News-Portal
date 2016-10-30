@@ -27,6 +27,10 @@
     padding: 10px 10px 0;
 }
 
+.opinion > div{
+    width: calc(100% - 85px);
+}
+
 .author-name{
     text-transform: capitalize;
     font-size: 15px;
