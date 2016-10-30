@@ -17,7 +17,6 @@ class ArticlesCarusel extends Component {
         super();
         this.forEachLink = this.forEachLink.bind(this);
         this.getActiveArticle = this.getActiveArticle.bind(this);
-        this.showMore = this.showMore.bind(this);
     }
 
     getActiveArticle(){
